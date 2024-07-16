@@ -21,6 +21,26 @@ import IconCoffee from '~icons/tabler/coffee'
 import IconTerminal2 from '~icons/tabler/terminal-2'
 import IconFlagChina from '~icons/twemoji/flag-china'
 
+const Footer: React.FC = () => {
+  const [infoPanelState, setInfoPanelState] = useAtom(infoPanelStateAtom)
+
+  const handleOpenInfoPanel = useCallback(
+    (modalType: InfoPanelType) => {
+      recordOpenInfoPanelAction(modalType, 'footer')
+      setInfoPanelState((state) => ({ ...state, [modalType]: true }))
+    },
+    [setInfoPanelState],
+  )
+
+  const handleCloseInfoPanel = useCallback(
+    (modalType: InfoPanelType) => {
+      setInfoPanelState((state) => ({ ...state, [modalType]: false }))
+    },
+    [setInfoPanelState],
+  )
+      
+      return (
+    <>
       <footer className="mb-1 mt-4 flex w-full items-center justify-center gap-2.5 text-sm ease-in" onClick={(e) => e.currentTarget.blur()}>
         <p>Powered by 白小七羽</p>
       </footer>

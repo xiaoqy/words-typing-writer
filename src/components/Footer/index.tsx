@@ -59,12 +59,6 @@ const Footer: React.FC = () => {
         <p className="indent-4 text-sm text-gray-700 dark:text-gray-200">
           我们相信，共同的努力可以让白羽单词打字机成为更好的学习平台，也相信您的支持将给予我们持续前进的动力。 感谢您的支持！
         </p>
-        <br />
-        <div className="flex items-center justify-center py-2">
-          <StickerButton className="" />
-        </div>
-
-        <DonatingCard />
       </InfoPanel>
       
       <footer className="mb-1 mt-4 flex w-full items-center justify-center gap-2.5 text-sm ease-in" onClick={(e) => e.currentTarget.blur()}>

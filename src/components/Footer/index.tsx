@@ -39,10 +39,39 @@ const Footer: React.FC = () => {
     [setInfoPanelState],
   )
       
-      <footer className="mb-1 mt-4 flex w-full items-center justify-center gap-2.5 text-sm ease-in" onClick={(e) => e.currentTarget.blur()}>
+      return (
+    <>
+      <InfoPanel
+        openState={infoPanelState.donate}
+        title="Buy us a coffee"
+        icon={IconCoffee}
+        buttonClassName="bg-amber-500 hover:bg-amber-400"
+        iconClassName="text-amber-500 bg-amber-100 dark:text-amber-300 dark:bg-amber-500"
+        onClose={() => handleCloseInfoPanel('donate')}
+      >
+        <p className="indent-4 text-sm text-gray-500 dark:text-gray-300">
+          非常感谢大家使用 Qwerty Learner，目前该网站使用业余时间在维护，为了保证网站能够持续地提供给大家高质量的服务，我们需要您的帮助！
+          <br />
+          您的捐款将有助于我们支付网站的运营成本，改进网站的功能和设计，并提高用户体验。
+          <br />
+        </p>
+        <br />
+        <p className="indent-4 text-sm text-gray-700 dark:text-gray-200">
+          我们相信，共同的努力可以让 Qwerty Learner 成为更好的学习平台，也相信您的支持将给予我们持续前进的动力。 感谢您的支持！
+        </p>
+        <br />
+        <p className="indent-4 text-sm text-gray-700 dark:text-gray-200">
+          为了感谢您的慷慨，单次 50 rmb 及以上的捐赠， 我们将回赠 Qwerty 的定制贴纸 5 枚<span className="text-xs">（仅限大陆地区）</span>
+          ，希望您可以跟朋友分享您的快乐
+        </p>
+        <div className="flex items-center justify-center py-2">
+          <StickerButton className="" />
+        </div>
 
-        <p>Power by@ 白小七羽</p>
+        <DonatingCard />
+      </InfoPanel>
       </footer>
+        </>
   )
 }
 

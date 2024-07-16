@@ -28,13 +28,11 @@ export const DonatingCard = ({ className, onAmountChange }: { className?: string
       <div className={`mt-3 flex w-full  flex-col  overflow-hidden px-11 transition-[height] duration-500 ${amount ? 'h-44' : 'h-0'}`}>
         {amount && (
           <div className="flex w-full justify-between">
-            
+            <img src={AmountImageMap[amount][0]} alt="" className=" h-44" />
+            <img src={AmountImageMap[amount][1]} alt="" className=" h-44" />
           </div>
         )}
       </div>
-      {amount && (amount >= 50 || amount === -1) && (
-        
-      )}
     </div>
   )
 }

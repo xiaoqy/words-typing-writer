@@ -33,6 +33,18 @@ export const DonatingCard = ({ className, onAmountChange }: { className?: string
           </div>
         )}
       </div>
+      {amount && (amount >= 50 || amount === -1) && (
+        <span>
+          <a
+            className="text-sm font-bold text-gray-500 underline-offset-4 hover:underline dark:text-gray-400"
+            href="https://wj.qq.com/s2/13329666/380d/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            贴纸寄送地址问卷
+          </a>
+        </span>
+      )}
     </div>
   )
 }

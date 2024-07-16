@@ -70,6 +70,7 @@ const Footer: React.FC = () => {
 
         <DonatingCard />
       </InfoPanel>
+      <footer className="mb-1 mt-4 flex w-full items-center justify-center gap-2.5 text-sm ease-in" onClick={(e) => e.currentTarget.blur()}>
       </footer>
         </>
   )

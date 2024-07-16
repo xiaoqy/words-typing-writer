@@ -28,22 +28,12 @@ export const DonatingCard = ({ className, onAmountChange }: { className?: string
       <div className={`mt-3 flex w-full  flex-col  overflow-hidden px-11 transition-[height] duration-500 ${amount ? 'h-44' : 'h-0'}`}>
         {amount && (
           <div className="flex w-full justify-between">
-            <img src={AmountImageMap[amount][0]} alt="alipay" className=" h-44" />
-            <img src={AmountImageMap[amount][1]} alt="weChat" className=" h-44" />
+            
           </div>
         )}
       </div>
       {amount && (amount >= 50 || amount === -1) && (
-        <span>
-          <a
-            className="text-sm font-bold text-gray-500 underline-offset-4 hover:underline dark:text-gray-400"
-            href="https://wj.qq.com/s2/13329666/380d/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            贴纸寄送地址问卷
-          </a>
-        </span>
+        
       )}
     </div>
   )

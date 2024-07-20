@@ -1,6 +1,4 @@
 import type { AmountType } from '../DonatingCard'
-import { DonatingCard } from '../DonatingCard'
-import { StickerButton } from '../DonatingCard/components/StickerButton'
 import { useChapterNumber, useDayFromFirstWordRecord, useSumWrongCount, useWordNumber } from './hooks/useWordStats'
 import { DONATE_DATE } from '@/constants'
 import { reportDonateCard } from '@/utils'
@@ -121,12 +119,8 @@ export const DonateCard = () => {
                       <IconParty className="inline-block" fontSize={16} />
                       <br />
                     </p>
-                    <div className="flex items-center justify-center">
-                      <StickerButton />
-                    </div>
                   </div>
 
-                  <DonatingCard className="mt-2" onAmountChange={onAmountChange} />
                 </div>
               </Dialog.Panel>
             </Transition.Child>

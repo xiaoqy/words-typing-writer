@@ -120,6 +120,11 @@ export const DonateCard = () => {
                       <br />
                     </p>
                   </div>
+                  <div className="flex w-full justify-between  px-14 pb-3 pt-0">
+                    <button type="button" className="my-btn-primary w-36 font-medium" onClick={onClickRemindMeLater}>
+                      之后提醒我
+                    </button>
+                  </div>
 
                 </div>
               </Dialog.Panel>

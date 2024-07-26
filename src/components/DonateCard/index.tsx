@@ -110,7 +110,7 @@ export const DonateCard = () => {
                   <h1 className="gradient-text w-full pt-3 text-center text-[2.4rem] font-bold">{`${chapterNumber} Chapters Achievement !`}</h1>
                   <div className="flex w-full flex-col gap-4 px-4">
                     <p className="mx-auto px-4 indent-4">
-                      您刚刚完成了<HighlightedText> {chapterNumber} </HighlightedText>章节的练习，白羽单词打字机 已经陪你走过
+                      您刚刚完成了<HighlightedText> {chapterNumber} </HighlightedText>章节的练习，白羽单词打字机已经陪你走过
                       <HighlightedText> {dayFromFirstWord} </HighlightedText> 天，一起完成了
                       <HighlightedText> {wordNumber} </HighlightedText>
                       词的练习，帮助您纠正了 <HighlightedText> {sumWrongCount} </HighlightedText>次错误输入，让我们一起为您的进步欢呼

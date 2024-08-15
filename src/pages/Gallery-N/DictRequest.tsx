@@ -25,8 +25,9 @@ export default function DictRequest() {
           onClose={onClosePanel}
         >
           <p className="text-sm text-gray-600 dark:text-gray-300">
-            如果您遇到词典错误的问题，或新增词典内容的建议。
-            请将您的需求发送邮件到 <a href="mailto:ixiaoqy@outlook.com" className="px-2 text-blue-500" aria-label="发送邮件到 ixiaoqy@outlook.com">ixiaoqy@outlook.com</a>
+            如果您遇到词典错误的问题，或新增词典内容的建议。<br />
+            请将您的需求发送邮件到
+            <a href="mailto:ixiaoqy@outlook.com" className="px-2 text-blue-500" aria-label="发送邮件到 ixiaoqy@outlook.com">ixiaoqy@outlook.com</a>
           </p>
           <br />
         </InfoPanel>

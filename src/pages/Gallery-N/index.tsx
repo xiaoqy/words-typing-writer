@@ -78,12 +78,12 @@ export default function GalleryPage() {
                       <DictionaryGroup key={category} groupedDictsByTag={groupeByTag} />
                     ))}
                   </div>
-                  <div className="flex items-center justify-center pb-10 pt-[20rem] text-gray-500">
+                  {/* <div className="flex items-center justify-center pb-10 pt-[20rem] text-gray-500">
                     <IconInfo className="mr-1 h-5 w-5" />
                     <p className="mr-5 w-10/12 text-xs">
                       这些数据仅供个人学习和研究使用，严禁用于任何商业目的。
                     </p>
-                  </div>
+                  </div> */}
                 </ScrollArea.Viewport>
                 <ScrollArea.Scrollbar className="flex touch-none select-none bg-transparent " orientation="vertical"></ScrollArea.Scrollbar>
               </ScrollArea.Root>

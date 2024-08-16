@@ -814,7 +814,7 @@ const internationalExam: DictionaryResource[] = [
   {
     id: 'IELTS-oral-900',
     name: '雅思口语 900 beta版',
-    description: '雅思口语 900 句, 需在白羽单词打字机设置中调小英语字体',
+    description: '雅思口语 900 句, 需在 qwerty 设置中调小英语字体',
     category: '国际考试',
     tags: ['IELTS'],
     url: '/dicts/IELTS-oral-900.json',
@@ -2814,7 +2814,17 @@ const programming: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'code',
   },
-
+  {
+    id: 'childCode004',
+    name: 'Arduino',
+    description: 'Arduino常见词',
+    category: '代码练习',
+    tags: ['少儿编程', 'Arduino'],
+    url: '/dicts/arduino_keywords.json',
+    length: 78,
+    language: 'en',
+    languageCategory: 'code',
+  },
   {
     id: 'jsArray',
     name: 'JS: Array',

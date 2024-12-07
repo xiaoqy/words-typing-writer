@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
       return (
     <>
       <footer className="mb-1 mt-4 flex w-full items-center justify-center gap-2.5 text-sm ease-in" onClick={(e) => e.currentTarget.blur()}>
-        <p>Powered by xiaoqy (白小七羽)</p>
+        <p>© 2024 Allen Shaw. All Rights Reserved.</p>
       </footer>
         </>
   )
